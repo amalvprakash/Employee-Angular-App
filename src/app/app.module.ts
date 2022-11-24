@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 
 const myRoute:Routes = [
   {
@@ -29,6 +30,7 @@ const myRoute:Routes = [
     LoginComponent,
     EmployeeEntryComponent,
     EmployeelistComponent,
+    EmployeeSearchComponent,
 
   ],
   imports: [
