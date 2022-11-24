@@ -6,11 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
+import { EmployeelistComponent } from './employeelist/employeelist.component';
 
 const myRoute:Routes = [
   {
     path:"",
     component:LoginComponent
+  },
+  {
+    path:"entry",
+    component:EmployeeEntryComponent
+  },
+  {
+    path:"list",
+    component:EmployeelistComponent
   }
 ]
 
@@ -19,6 +28,7 @@ const myRoute:Routes = [
     AppComponent,
     LoginComponent,
     EmployeeEntryComponent,
+    EmployeelistComponent,
 
   ],
   imports: [
