@@ -9,6 +9,7 @@ import { EmployeeEntryComponent } from './employee-entry/employee-entry.componen
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 const myRoute:Routes = [
   {
@@ -41,6 +42,7 @@ const myRoute:Routes = [
     EmployeelistComponent,
     EmployeeSearchComponent,
     EmployeeDeleteComponent,
+    EditEmployeeComponent,
 
   ],
   imports: [
