@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
 
 const myRoute:Routes = [
   {
@@ -21,6 +22,14 @@ const myRoute:Routes = [
   {
     path:"list",
     component:EmployeelistComponent
+  },
+  {
+    path:"search",
+    component:EmployeeSearchComponent
+  },
+  {
+    path:"delete",
+    component:EmployeeDeleteComponent
   }
 ]
 
@@ -31,6 +40,7 @@ const myRoute:Routes = [
     EmployeeEntryComponent,
     EmployeelistComponent,
     EmployeeSearchComponent,
+    EmployeeDeleteComponent,
 
   ],
   imports: [
