@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { EmployeeEntryComponent } from './employee-entry/employee-entry.component';
 
 const myRoute:Routes = [
   {
@@ -17,6 +18,7 @@ const myRoute:Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
+    EmployeeEntryComponent,
 
   ],
   imports: [
