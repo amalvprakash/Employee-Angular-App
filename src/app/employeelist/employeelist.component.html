@@ -8,75 +8,21 @@
                 <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">Employee Code</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Department</th>
+                        <th scope="col">Designation</th>
+                        <th scope="col">Salary</th>
                         <th scope="col">Phone</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Finance</td>
-                        <td>09348987555</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Finance</td>
-                        <td>873364878475</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>IT</td>
-                        <td>3784673467</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Ben</td>
-                        <td>IT</td>
-                        <td>67890-33333</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Ram</td>
-                        <td>Accounts</td>
-                        <td>988495759</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">6</th>
-                        <td>Cage</td>
-                        <td>Business</td>
-                        <td>9376734346</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">7</th>
-                        <td>Raj</td>
-                        <td>IT</td>
-                        <td>9344764346</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">8</th>
-                        <td>Bob</td>
-                        <td>Business</td>
-                        <td>7474557785</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">9</th>
-                        <td>John</td>
-                        <td>Business</td>
-                        <td>38743748483</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">10</th>
-                        <td>Ron</td>
-                        <td>Tech</td>
-                        <td>937633445543</td>
+                      <tr *ngFor="let i of data">
+                        <td>{{i.name}}</td>
+                        <td>{{i.desg}}</td>
+                        <td>{{i.salary}}</td>
+                        <td>{{i.phone}}</td>
                       </tr>
                     </tbody>
                   </table>
 
         </div>
-    </div>
+    </div> 
