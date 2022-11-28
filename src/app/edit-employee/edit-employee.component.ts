@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./edit-employee.component.css']
 })
 export class EditEmployeeComponent {
+  edit = ""
 
+  Edit = () => {
+    let data:any = {
+      "edit":this.edit
+    }
+    console.log(data)
+  }
 }

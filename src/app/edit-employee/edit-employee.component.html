@@ -7,10 +7,10 @@
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Enter Employee Code</label>
-                    <input type="text" class="form-control">
+                    <input name="edit" [(ngModel)]="edit" type="text" class="form-control">
                 </div>
                 <div>
-                    <button class="btn btn-primary">Edit</button>
+                    <button (click)="Edit()" class="btn btn-primary">Edit</button>
                 </div>
             </div>
 
