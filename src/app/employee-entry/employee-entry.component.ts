@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-entry.component.css']
 })
 export class EmployeeEntryComponent {
-
+  name=""
+  desg=""
+  salary=""
+  phone=""
+  
+  readValues =() =>{
+    let data:any ={
+      "name":this.name,
+      "desg":this.desg,
+      "salary":this.salary,
+      "phone":this.phone
+    }
+    console.log(data)
+  }
 }
