@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-employee-search',
@@ -6,12 +7,44 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee-search.component.css']
 })
 export class EmployeeSearchComponent {
-  search = ""
+  constructor(private api:ApiService){}
+
+  empCode=""
+  searchData:any = []
 
   Search = () => {
     let data:any = {
-      "search":this.search
+      "empCode":this.empCode
     }
-    console.log(data)
+    this.api.search(data).subscribe(
+      (response:any)=>{
+        console.log(response)
+        if (response.length == 0) {
+          alert("Employee Not Found!!!")
+        } else {
+          this.searchData = response;
+        }
+      }
+    )
+  }
+
+  deleteBtnClick = (id:any) =>{
+    let data:any ={
+      "id":id 
+  }
+  this.api.delete(data).subscribe(
+    (response:any)=>{
+      console.log(response)
+      if("status"=="status"){
+        alert("deleted")
+        this.searchData
+        id =""
+      }else{
+        alert("something went wrong")
+      }
+
+    }
+    
+  )
   }
 }
